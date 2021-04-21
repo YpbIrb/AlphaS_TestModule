@@ -79,7 +79,7 @@ public class TestModuleController : MonoBehaviour
                 // Read user input and send that to the client process.
                 using (StreamWriter sw = new StreamWriter(pipeClient))
                 {
-                    sw.WriteLine("TestModule");
+                    sw.WriteLine(module_name);
                     sw.AutoFlush = true;
                     foreach (KeyValuePair<string, string> pair in results)
                     {
