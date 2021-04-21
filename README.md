@@ -1,6 +1,6 @@
 # AlphaS_TestModule
 Модуль для тестирования работоспособности клиентского приложения системы AlphaS.  
-Если вы хотите, чтобы ваша программа могла выступать как модуль в данной системе, можете просто вставить 2 функции из скрипта /Assets/Scripts/TestModuleController.cs в работу своей программы.  
+Если вы хотите, чтобы ваша программа могла выступать как модуль в данной системе, можете просто вставить 2 функции из скрипта [/Assets/Scripts/TestModuleController.cs](https://github.com/YpbIrb/AlphaS_TestModule/blob/main/Assets/Scripts/TestModuleController.cs) в работу своей программы.  
 SendResultsWithNamedPipes(Dictionary<string, string> results) - для отправки результатов работы модуля.  
 GetNamedArgumentsFromConsole() - для получения начальных аргументов для модуля из консоли.  
 
