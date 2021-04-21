@@ -18,7 +18,6 @@ public class TestModuleController : MonoBehaviour
 
     const string module_name = "TestModule";
 
-    // Start is called before the first frame update
     void Start()
     {
         Debug.Log("In Start");
@@ -27,7 +26,6 @@ public class TestModuleController : MonoBehaviour
         ExitButton.onClick.AddListener(OnExitClick);
     }
 
-    // Update is called once per frame
     void Update()
     {
         
@@ -76,7 +74,6 @@ public class TestModuleController : MonoBehaviour
             Debug.Log("Client connected.");
             try
             {
-                // Read user input and send that to the client process.
                 using (StreamWriter sw = new StreamWriter(pipeClient))
                 {
                     sw.WriteLine(module_name);
@@ -93,8 +90,6 @@ public class TestModuleController : MonoBehaviour
 
                 }
             }
-            // Catch the IOException that is raised if the pipe is broken
-            // or disconnected.
             catch (IOException e)
             {
                 Debug.Log(e);
